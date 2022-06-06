@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Document</title>
+  </head>
+  <body>
+    <style>
+      #nav{
+        height:30px;
+         width:100%;
+         display:flex;
+         justify-content: space-evenly;
+         background-color: rgb(138, 188, 171);
+         margin-bottom: 50px;
+      }
+      a{
+        text-decoration: none;
+        color:black;
+        font-size: 25px;
+        font-weight: bold;
+      }
+      #voucher_list{
+        
+        display:grid;
+        grid-template-columns: repeat(4,0.8fr);
+        gap:20px;
+        justify-content: center;
+        justify-items: center;
+    
+      }
+      #voucher_list>div{
+        border:3px solid rgb(172, 168, 168);
+        text-align: center;
+      }
+      h4{
+        font-size: 25px;
+        margin-top: 5px;
+        margin-bottom:20px;
+      }
+      h3{
+        font-size: 20px;
+        margin-top:-20px;
+      }
+      h3+button{
+        margin-bottom: 10px;
+        border-color: none;
+        height:20px;
+        width:50px;
+        background-color: black;
+        color:white;
+        border-radius: 4px;
+      }
+      h2{
+       margin-top: 0px;
+      }
+      p{
+        font-size: 25px;
+        font-weight: bold;
+        margin-top: 0px;
+      }
+
+    </style>
+  </head>
+  <body>
+    <!-- Wallet balence id:- "wallet_balance" (only number). -->
+    <!-- - The voucher card will have class :- "voucher".
+  - All the vouchers will be appended inside div with id "voucher_list".
+  - Buy button will have class:- "buy_voucher"
+  - All the purchased voucher will be stored with key :- "purchase". -->
+  <div id="nav">
+    <div><p>Vouchers Page</p></div>
+    <div id="wallet_balance"></div>
+    <a href="purchase.html">Parchase</a>
+    </div>
+  </div>
+  <div id="voucher_list"></div>
+  </body>
+</html>
+<script src="scripts\voucher.js"></script>
+  </body>
+</html>
